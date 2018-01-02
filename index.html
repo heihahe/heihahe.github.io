@@ -158,7 +158,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/29/MyFristBlog/">myfristblog</a>
+      <a class="article-title" href="/2017/12/29/MyFristBlog/">MyFristBlog</a>
     </h1>
   
 
@@ -172,9 +172,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>[TOC]</p>
-<p> 使用hexo+github搭建免费个人博客详细教程</p>
-<p>##1. 准备工作</p>
-<p>在开始一切之前，你必须已经：</p>
+<p>使用hexo+github搭建免费个人博客详细教程</p>
+<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在开始一切之前，你必须已经：</p>
 <ul>
 <li>有一个github账号，没有的话去注册一个；</li>
 <li>安装了node.js、npm，并了解相关基础知识；</li>
@@ -182,12 +181,10 @@
 </ul>
 <p>本文所使用的环境：</p>
 <p>Windows8.1 + node.js@5.5.0 + git@1.9.2 + hexo@3.2.2</p>
-<p>##2 创建仓库</p>
-<p>&emsp;&emsp;新建一个名为你的用户名.github.io的仓库，比如说，如果你的github用户名是test，那么你就新建test.github.io的仓库（必须是你的用户名，其它名称无效），将来你的网站访问地址就是 <a href="http://test.github.io了,由此可见，每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。" target="_blank" rel="noopener">http://test.github.io了,由此可见，每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。</a></p>
-<p>##3 安装node.js<br><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
-<p>##4 安装Git Bash<br><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
-<p>##5 安装hexo</p>
-<blockquote>
+<h2 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2 创建仓库"></a>2 创建仓库</h2><p>&emsp;&emsp;新建一个名为你的用户名.github.io的仓库，比如说，如果你的github用户名是test，那么你就新建test.github.io的仓库（必须是你的用户名，其它名称无效），将来你的网站访问地址就是 <a href="http://test.github.io了,由此可见，每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。" target="_blank" rel="noopener">http://test.github.io了,由此可见，每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。</a></p>
+<h2 id="3-安装node-js"><a href="#3-安装node-js" class="headerlink" title="3 安装node.js"></a>3 安装node.js</h2><p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
+<h2 id="4-安装Git-Bash"><a href="#4-安装Git-Bash" class="headerlink" title="4 安装Git Bash"></a>4 安装Git Bash</h2><p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
+<h2 id="5-安装hexo"><a href="#5-安装hexo" class="headerlink" title="5 安装hexo"></a>5 安装hexo</h2><blockquote>
 <p>github: <a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">https://github.com/hexojs/hexo</a></p>
 </blockquote>
 <pre><code>$ npm install -g hexo       #安装
@@ -205,8 +202,7 @@ $ hexo s                    # 启动服务
 </code></pre><p>如果提示Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：</p>
 <pre><code>Hi liuxianan! You&apos;ve successfully authenticated, but，GitHub does not provide shell access.
 </code></pre><p>看到这个信息说明SSH已配置成功！</p>
-<p>##6 修改主题</p>
-<p>推荐2个主题：hexo-theme-jekyll 和 hexo-theme-yilia。</p>
+<h2 id="6-修改主题"><a href="#6-修改主题" class="headerlink" title="6 修改主题"></a>6 修改主题</h2><p>推荐2个主题：hexo-theme-jekyll 和 hexo-theme-yilia。</p>
 <p>首先下载这个主题：</p>
 <pre><code>$ cd /f/Workspaces/hexo/
 $ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
@@ -219,11 +215,9 @@ $ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
   type: git
   repository: git@github.com:liuxianan/liuxianan.github.io.git
   branch: master
-</code></pre><p>##7 上传到github</p>
-<pre><code>$ npm install hexo-deployer-git --save   #此时直接执行hexo d的话一般会报如下错误：Deployer not found: github 或者 Deployer not found: git
+</code></pre><h2 id="7-上传到github"><a href="#7-上传到github" class="headerlink" title="7 上传到github"></a>7 上传到github</h2><pre><code>$ npm install hexo-deployer-git --save   #此时直接执行hexo d的话一般会报如下错误：Deployer not found: github 或者 Deployer not found: git
 $ hexo d          #上传，首先，ssh key肯定要配置好。
-</code></pre><p>##8 写博客</p>
-<p>定位到我们的hexo根目录，执行命令：</p>
+</code></pre><h2 id="8-写博客"><a href="#8-写博客" class="headerlink" title="8 写博客"></a>8 写博客</h2><p>定位到我们的hexo根目录，执行命令：</p>
 <pre><code>$ hexo new &apos;my-first-blog&apos;
 </code></pre><p>hexo会帮我们在_posts下生成相关md文件：</p>
 <p>我们只需要打开这个文件就可以开始写博客了，默认生成如下内容：</p>
@@ -237,8 +231,7 @@ description: 附加一段文章摘要，字数最好在140字以内，会出现�
 </code></pre><p>如何让博文列表不显示全部内容</p>
 <p>默认情况下，生成的博文目录会显示全部的文章内容，如何设置文章摘要的长度呢？</p>
 <p>答案是在合适的位置加上&lt;!–more–&gt;即可</p>
-<p>##9 常用hexo命令</p>
-<p>常见命令</p>
+<h2 id="9-常用hexo命令"><a href="#9-常用hexo命令" class="headerlink" title="9 常用hexo命令"></a>9 常用hexo命令</h2><p>常见命令</p>
 <pre><code>hexo new &quot;postName&quot; #新建文章
 hexo new page &quot;pageName&quot; #新建页面
 hexo generate #生成静态页面至public目录
