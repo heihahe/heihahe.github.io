@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | 穿靴子的猫</title>
+  <title>三种常见的函数调用约定 | 穿靴子的猫</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="穿靴子的猫">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="0x01 什么是函数调用约定&amp;emsp;&amp;emsp;函数调用约定，是指当一个函数被调用时，函数的参数会被传递给被调用的函数和返回值会被返回给调用函数。函数的调用约定就是描述参数是怎么传递和由谁平衡堆栈的，当然还有返回值。 0x02 常见的三种函数调用约定 __cdecl: C/C++默认方式，参数从右向左入栈，主调函数负责栈平衡。  __stdcall: windows API默认方式，参数从右向">
+<meta property="og:type" content="article">
+<meta property="og:title" content="三种常见的函数调用约定">
+<meta property="og:url" content="http://yoursite.com/2018/01/09/三种常见的函数调用约定/index.html">
 <meta property="og:site_name" content="穿靴子的猫">
+<meta property="og:description" content="0x01 什么是函数调用约定&amp;emsp;&amp;emsp;函数调用约定，是指当一个函数被调用时，函数的参数会被传递给被调用的函数和返回值会被返回给调用函数。函数的调用约定就是描述参数是怎么传递和由谁平衡堆栈的，当然还有返回值。 0x02 常见的三种函数调用约定 __cdecl: C/C++默认方式，参数从右向左入栈，主调函数负责栈平衡。  __stdcall: windows API默认方式，参数从右向">
+<meta property="og:updated_time" content="2018-01-10T08:55:50.787Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="穿靴子的猫">
+<meta name="twitter:title" content="三种常见的函数调用约定">
+<meta name="twitter:description" content="0x01 什么是函数调用约定&amp;emsp;&amp;emsp;函数调用约定，是指当一个函数被调用时，函数的参数会被传递给被调用的函数和返回值会被返回给调用函数。函数的调用约定就是描述参数是怎么传递和由谁平衡堆栈的，当然还有返回值。 0x02 常见的三种函数调用约定 __cdecl: C/C++默认方式，参数从右向左入栈，主调函数负责栈平衡。  __stdcall: windows API默认方式，参数从右向">
   
     <link rel="alternative" href="/atom.xml" title="穿靴子的猫" type="application/atom+xml">
   
@@ -149,103 +153,281 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-三种常见的函数调用约定" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/10/字节序的前世今生/" class="archive-article-date">
-  	<time datetime="2018-01-10T01:39:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/10/字节序的前世今生/">字节序的前世今生</a>
+    <h1 class="article-title" itemprop="name">
+      三种常见的函数调用约定
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/09/三种常见的函数调用约定/" class="archive-article-date">
+        
+        <a href="/2018/01/09/三种常见的函数调用约定/" class="archive-article-date">
   	<time datetime="2018-01-09T08:53:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-09</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/09/三种常见的函数调用约定/">三种常见的函数调用约定</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="0x01-什么是函数调用约定"><a href="#0x01-什么是函数调用约定" class="headerlink" title="0x01 什么是函数调用约定"></a>0x01 什么是函数调用约定</h2><p>&emsp;&emsp;函数调用约定，是指当一个函数被调用时，函数的参数会被传递给被调用的函数和返回值会被返回给调用函数。函数的调用约定就是描述参数是怎么传递和由谁平衡堆栈的，当然还有返回值。</p>
+<h2 id="0x02-常见的三种函数调用约定"><a href="#0x02-常见的三种函数调用约定" class="headerlink" title="0x02 常见的三种函数调用约定"></a>0x02 常见的三种函数调用约定</h2><ul>
+<li><p>__cdecl: C/C++默认方式，参数从右向左入栈，主调函数负责栈平衡。</p>
+</li>
+<li><p>__stdcall: windows API默认方式，参数从右向左入栈，被调函数负责栈平衡。</p>
+</li>
+<li><p>__fastcall: 快速调用方式。所谓快速，这种方式选择将参数优先从寄存器传入（ECX和EDX），剩下的参数再从右向左从栈传入。因为栈是位于内存的区域，而寄存器位于CPU内，故存取方式快于内存，故其名曰“__fastcall”。</p>
+</li>
+</ul>
+<h2 id="0x03-实例说明"><a href="#0x03-实例说明" class="headerlink" title="0x03 实例说明"></a>0x03 实例说明</h2><p>&emsp;&emsp;下面从实例来认识一下这三种调用约定。先来看一个简单C语言程序（没有实际意义，只为说明三种调用方式的区别）： </p>
+<pre><code>#include&lt;iostream&gt;     
+int main(){
+    FunA(1,2); //__cdecl
+    FunB(1,2); //__stdcall
+    FunC(1,2); //__fastcall
+    return 0;
+}
 
-        <div class="article-info info-on-right">
-          
-          
+void __cdecl FunA(int x,int y){
 
+}
+
+void __stdcall FunB(int x,int y){
+
+}
+
+void __fastcall FunC(int x,int y){
+
+}
+</code></pre><p>编译执行后，看一下main方法调用子方法的汇编代码</p>
+<pre><code>18:       FunA(1,2); //__cdecl
+004010F8   push        2
+004010FA   push        1
+004010FC   call        @ILT+10(FunA) (0040100f)
+00401101   add         esp,8
+19:       FunB(1,2); //__stdcall
+00401104   push        2
+00401106   push        1
+00401108   call        @ILT+0(FunB) (00401005)
+20:       FunC(1,2); //__fastcall
+0040110D   mov         edx,2
+00401112   mov         ecx,1
+00401117   call        @ILT+5(FunC) (0040100a)
+21:
+22:       return 0;
+</code></pre><p>&emsp;&emsp;按照上面说的那样，三种调用都按照参数从右向左的方式进入栈区（fastcall除去从寄存器入栈的其他参数），注意FunA()和FunB()的区别，FunA()在call指令执行之后紧跟着执行了add esp,8。这一操作正是我们前面所说的进行栈的平衡。调用函数之前连续进行了两次push操作将函数所需的实参2和1先后压入了栈区，调用完成后，我们需要恢复调用前的状态，则需调整栈顶指针esp的位置。</p>
+<p>&emsp;&emsp;那__stdcall和__fastcall又是怎么来进行栈平衡的呢，我们再分别来看看三个子函数的汇编代码</p>
+<p>FunA:</p>
+<pre><code>4:    void __cdecl FunA(int x,int y){
+00401080   push        ebp
+00401081   mov         ebp,esp
+00401083   sub         esp,40h
+00401086   push        ebx
+00401087   push        esi
+00401088   push        edi
+00401089   lea         edi,[ebp-40h]
+0040108C   mov         ecx,10h
+00401091   mov         eax,0CCCCCCCCh
+00401096   rep stos    dword ptr [edi]
+5:
+6:   }
+00401098   pop         edi
+00401099   pop         esi
+0040109A   pop         ebx
+0040109B   mov         esp,ebp
+0040109D   pop         ebp
+0040109E   ret         
+</code></pre><p>FunB:</p>
+<pre><code>8:    void __stdcall FunB(int x,int y){
+00401080   push        ebp
+00401081   mov         ebp,esp
+00401083   sub         esp,40h
+00401086   push        ebx
+00401087   push        esi
+00401088   push        edi
+00401089   lea         edi,[ebp-40h]
+0040108C   mov         ecx,10h
+00401091   mov         eax,0CCCCCCCCh
+00401096   rep stos    dword ptr [edi]
+9:
+10:   }
+00401098   pop         edi
+00401099   pop         esi
+0040109A   pop         ebx
+0040109B   mov         esp,ebp
+0040109D   pop         ebp
+0040109E   ret         8
+</code></pre><p>FunC:</p>
+<pre><code>12:   void __fastcall FunC(int x,int y){
+004010B0   push        ebp
+004010B1   mov         ebp,esp
+004010B3   sub         esp,48h
+004010B6   push        ebx
+004010B7   push        esi
+004010B8   push        edi
+004010B9   push        ecx
+004010BA   lea         edi,[ebp-48h]
+004010BD   mov         ecx,12h
+004010C2   mov         eax,0CCCCCCCCh
+004010C7   rep stos    dword ptr [edi]
+004010C9   pop         ecx
+004010CA   mov         dword ptr [ebp-8],edx
+004010CD   mov         dword ptr [ebp-4],ecx
+13:
+14:   }
+004010D0   pop         edi
+004010D1   pop         esi
+004010D2   pop         ebx
+004010D3   mov         esp,ebp
+004010D5   pop         ebp
+004010D6   ret
+</code></pre><p>&emsp;&emsp;由此可见，平衡栈这一工作由谁来完成就决定了函数调用方式，__cdecl由主调函数完成（外平栈），__stdcall由被调函数完成（内平栈）。</p>
+<p>&emsp;&emsp;说完了<strong>cdecl和</strong>stdcall，再来看看__fastcall，如前面图看到的调用时并未使用push指令向栈里传参数，而是使用了以下两条指令。</p>
+<pre><code>Mov  edx, 2
+Mov  ecx, 1
+</code></pre><p>&emsp;&emsp;这样直接将参数传入寄存器，被调函数在执行的时候直接从寄存器取值即可，省去了从栈里取出来给寄存器，再从寄存器取出来放入内存。所以如果只有两个参数的话，这两个参数是通过寄存器传递参数的，因此不需要平衡栈；但如果参数超过两个，那么超过的部分其实和__stdcall的栈平衡栈方式一致，为内平栈。</p>
+<p>&emsp;&emsp;当然，上面所说的这些操作都是由编译器为我们完成的，对我们是透明的。不过，在做逆向分析时，确定参数个数时，这些基本概念还是必须的。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/09/三种常见的函数调用约定/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/03/登陆口绕过JS加密爆破/" class="archive-article-date">
-  	<time datetime="2018-01-03T08:24:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-03</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/01/10/字节序的前世今生/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          字节序的前世今生
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/01/03/登陆口绕过JS加密爆破/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">登陆口绕过JS加密爆破</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/03/登陆口绕过JS加密爆破/">登陆口绕过JS加密爆破</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -268,8 +450,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

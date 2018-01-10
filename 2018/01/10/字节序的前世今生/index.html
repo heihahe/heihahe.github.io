@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | 穿靴子的猫</title>
+  <title>字节序的前世今生 | 穿靴子的猫</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="穿靴子的猫">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="0x01 什么是字节序：&amp;emsp;&amp;emsp;字节序是指多字节数据在计算机内存中存储或者网络传输时各字节的存储顺序。 0x02 为什么要有字节序：&amp;emsp;&amp;emsp;我们知道计算机正常的内存增长方式是从低到高(栈除外)，当存储数据类型是一个字节时，就没有字节序的概念，按照内存增长方向一个个存就行了。 &amp;emsp;&amp;emsp;但当数据太大，一个字节存不下的时候，我们就得使用多个字节了。比如，我">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字节序的前世今生">
+<meta property="og:url" content="http://yoursite.com/2018/01/10/字节序的前世今生/index.html">
 <meta property="og:site_name" content="穿靴子的猫">
+<meta property="og:description" content="0x01 什么是字节序：&amp;emsp;&amp;emsp;字节序是指多字节数据在计算机内存中存储或者网络传输时各字节的存储顺序。 0x02 为什么要有字节序：&amp;emsp;&amp;emsp;我们知道计算机正常的内存增长方式是从低到高(栈除外)，当存储数据类型是一个字节时，就没有字节序的概念，按照内存增长方向一个个存就行了。 &amp;emsp;&amp;emsp;但当数据太大，一个字节存不下的时候，我们就得使用多个字节了。比如，我">
+<meta property="og:updated_time" content="2018-01-10T09:07:50.022Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="穿靴子的猫">
+<meta name="twitter:title" content="字节序的前世今生">
+<meta name="twitter:description" content="0x01 什么是字节序：&amp;emsp;&amp;emsp;字节序是指多字节数据在计算机内存中存储或者网络传输时各字节的存储顺序。 0x02 为什么要有字节序：&amp;emsp;&amp;emsp;我们知道计算机正常的内存增长方式是从低到高(栈除外)，当存储数据类型是一个字节时，就没有字节序的概念，按照内存增长方向一个个存就行了。 &amp;emsp;&amp;emsp;但当数据太大，一个字节存不下的时候，我们就得使用多个字节了。比如，我">
   
     <link rel="alternative" href="/atom.xml" title="穿靴子的猫" type="application/atom+xml">
   
@@ -149,103 +153,205 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-字节序的前世今生" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      字节序的前世今生
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/10/字节序的前世今生/" class="archive-article-date">
+
+        
+        <a href="/2018/01/10/字节序的前世今生/" class="archive-article-date">
   	<time datetime="2018-01-10T01:39:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-10</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/10/字节序的前世今生/">字节序的前世今生</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="0x01-什么是字节序："><a href="#0x01-什么是字节序：" class="headerlink" title="0x01 什么是字节序："></a>0x01 什么是字节序：</h2><p>&emsp;&emsp;字节序是指多字节数据在计算机内存中存储或者网络传输时各字节的存储顺序。</p>
+<h2 id="0x02-为什么要有字节序："><a href="#0x02-为什么要有字节序：" class="headerlink" title="0x02 为什么要有字节序："></a>0x02 为什么要有字节序：</h2><p>&emsp;&emsp;我们知道计算机正常的内存增长方式是从低到高(栈除外)，当存储数据类型是一个字节时，就没有字节序的概念，按照内存增长方向一个个存就行了。</p>
+<p>&emsp;&emsp;但当数据太大，一个字节存不下的时候，我们就得使用多个字节了。比如，我需要存储一个4字节的数据，这时就必须要考虑这个数据内部的4个字节的存储顺序。</p>
+<h2 id="0x03-有哪些字节序："><a href="#0x03-有哪些字节序：" class="headerlink" title="0x03 有哪些字节序："></a>0x03 有哪些字节序：</h2><ul>
+<li><p>大端序：多字节数据的低字节存储在高地址中。</p>
+</li>
+<li><p>小端序：多字节数据的低字节存储在低地址中。</p>
+</li>
+</ul>
+<p>举个例子</p>
+<p>&emsp;&emsp;位宽为32bit的CPU，要存储的字数据为0x12345678，起始地址为0x0001。</p>
+<p>大端序：</p>
+<pre><code>地址  0x0001  0x0002  0x0003  0x0004 
+内容  0x12       0x34       0x56      0x78
+</code></pre><p>小端序：</p>
+<pre><code>地址  0x0001  0x0002  0x0003  0x0004 
+内容  0x78       0x56      0x34      0x12
+</code></pre><h2 id="0x04-为什么要有不同的字节序："><a href="#0x04-为什么要有不同的字节序：" class="headerlink" title="0x04 为什么要有不同的字节序："></a>0x04 为什么要有不同的字节序：</h2><p>简单回答： 各有各的好处</p>
+<p>详细回答：</p>
+<p>&emsp;&emsp;一、大小端问题主要涉及的是非单字节非字符串外的其余数据的表示和传递，如short型、int型等。大端和小端有其各自的优势。我们知道计算机正常的内存增长方式是从低到高(当然栈不是)，取数据方式是从基址根据偏移找到他们的位置，从他们的存储方式可以看出，大端存储因为第一个字节就是高位，从而很容易知道它是正数还是负数，对于一些数值判断会很迅速。而小端存储 第一个字节是它的低位，符号位在最后一个字节，这样在做数值四则运算时从低位每次取出相应字节运算，最后直到高位，并且最终把符号位刷新，这样的运算方式会更高效。</p>
+<p>&emsp;&emsp;二、计算机电路先处理低位字节，效率比较高，因为计算都是从低位开始的。所以，计算机的内部处理都是小端字节序。但是，人类还是习惯读写大端字节序。所以，除了计算机的内部处理，其他的场合几乎都是大端字节序，比如网络传输和文件储存。</p>
+<h2 id="0x05-字节序和编码的关系："><a href="#0x05-字节序和编码的关系：" class="headerlink" title="0x05 字节序和编码的关系："></a>0x05 字节序和编码的关系：</h2><p>&emsp;&emsp;只有多字节编码才有字节序的概念，因此UTF-8和GBK没有(但可以用BOM来表明编码方式，例如EF BB BF就是表示是UTF-8编码)，因为UTF-8的标准说了前面的字节是怎么样后面的字节是怎么样，GBK同理。</p>
+<p>例如UTF-8的编码规则<br>U+ 0000 ~ U+ 007F: 0XXXXXXX</p>
+<p>U+ 0080 ~ U+ 07FF: 110XXXXX 10XXXXXX</p>
+<p>U+ 0800 ~ U+ FFFF: 1110XXXX 10XXXXXX 10XXXXXX</p>
+<p>U+10000 ~ U+1FFFF: 11110XXX 10XXXXXX 10XXXXXX 10XXXXXX</p>
+<p>&emsp;&emsp;像UTF-16和UTF-32的编码方式在传输或存储的过程中就有字节序的问题，他们的字节序有BOM表示，如下</p>
+<pre><code>编码               表示 (十六进制)    表示 (十进制)
+UTF-16（大端序）   FE FF              254 255
+UTF-16（小端序）   FF FE              255 254
+UTF-32（大端序）   00 00 FE FF        0 0 254 255
+UTF-32（小端序）   FF FE 00 00        255 254 0 0
+</code></pre><h2 id="0x06-判断主机的字节序："><a href="#0x06-判断主机的字节序：" class="headerlink" title="0x06 判断主机的字节序："></a>0x06 判断主机的字节序：</h2><p>可以通过程序来进行验证：</p>
+<pre><code>&lt;span style=&quot;font-size:18px;&quot;&gt;#include &lt;stdio.h&gt;  
+#include &lt;arpa/inet.h&gt;  
 
-        <div class="article-info info-on-right">
-          
-          
+int main(){  
 
+    unsigned long a = 0x12345678;  
+    unsigned char *p = (unsigned char *)(&amp;a);  
+
+    printf(&quot;主机字节序:%0x    %0x   %0x   %0x\n&quot;,  p[0], p[1], p[2], p[3]);  
+
+    unsigned long b = htonl(a);  //将主机字节序转化成了网络字节序  
+
+    p = (unsigned char *)(&amp;b);  
+
+    printf(&quot;网络字节序:%0x    %0x   %0x   %0x\n&quot;,  p[0], p[1], p[2], p[3]);  
+    return 0;  
+}  
+</code></pre>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/10/字节序的前世今生/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/09/三种常见的函数调用约定/" class="archive-article-date">
-  	<time datetime="2018-01-09T08:53:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-09</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/09/三种常见的函数调用约定/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">三种常见的函数调用约定</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/09/三种常见的函数调用约定/">三种常见的函数调用约定</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/03/登陆口绕过JS加密爆破/" class="archive-article-date">
-  	<time datetime="2018-01-03T08:24:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/03/登陆口绕过JS加密爆破/">登陆口绕过JS加密爆破</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -268,8 +374,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
